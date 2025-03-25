@@ -7,16 +7,25 @@
 int main() {
     // Nível Novato - Movimentação das Peças
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
-
+int torre = 5, bispo = 5, rainha = 8;
     // Implementação de Movimentação do Bispo
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
-
+while (bispo <= 5)
+{
+    printf("BISPO %d CASAS DIAGONAL SUPERIOR DIREITA (while)\n", bispo); // Imprime movimento Bispo
+    bispo++;
+}
     // Implementação de Movimentação da Torre
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
-
+for (torre = 1; torre < 5; torre++){
+    printf("TORRE %d CASAS DIREITA (for)\n", torre); // Imprime movimento Torre
+}
     // Implementação de Movimentação da Rainha
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
-
+do{
+    printf("RAINHA %d CASAS ESQUERDA (do-while)\n", rainha ); //Imprime o movimento da Rainha
+    rainha++;
+} while (rainha <= 8);
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
