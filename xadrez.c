@@ -20,38 +20,38 @@ int torre = 5, bispo = 5, rainha = 8;
     bispo++;
 }
 
-for (bispo = 0; bispo < 5; bispo++){
+/*for (bispo = 0; bispo < 5; bispo++){
     printf("BISPO %d CASAS DIAGONAL SUPERIOR DIREITA (for)\n", bispo); // Imprime movimento Bispo usando for
 }
 
 do{
     printf("BISPO %d CASAS DIAGONAL SUPERIOR DIREITA (do-while)\n\n",bispo ); //Imprime o movimento da Bispo usando do-while
     bispo++;
-} while (bispo <= 5);
+} while (bispo <= 5);*/
 
     // Implementação de Movimentação da Torre
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
 
 
-while (torre <= 5)
+/*while (torre <= 5)
 {
     printf("TORRE %d CASAS DIREITA (while)\n", torre); // Imprime movimento Torre usando while
     torre++;
-}
+}*/
 
 for (torre = 0; torre < 5; torre++){
     printf("TORRE %d CASAS DIREITA (for)\n", torre); // Imprime movimento Torre usando for
 }
 
-do{
+/*do{
     printf("TORRE %d CASAS DIREITA (do-while)\n\n", torre ); //Imprime o movimento da Torre usando do-while
     torre++;
-} while (torre <= 5);
+} while (torre <= 5);*/
 
     // Implementação de Movimentação da Rainha
     // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
 
- while (rainha <= 8)
+/* while (rainha <= 8)
     {
         printf("RAINHA %d CASAS PARA ESQUERDA (while)\n", rainha); // Imprime movimento Rainha usando while
         rainha++;
@@ -59,7 +59,7 @@ do{
     
     for (rainha = 0; rainha < 8; rainha++){
         printf("RAINHA %d CASAS PARA ESQUERDA (for)\n", rainha); // Imprime movimento Rainha usando for
-    }
+    }*/
     
     do{
         printf("RAINHA %d CASAS PARA ESQUERDA (do-while)\n\n", rainha ); //Imprime o movimento da Rainha usando do-while
@@ -69,6 +69,17 @@ do{
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
+
+for (int i = 1; i <= 1; i++)
+{
+    int cavalo = 1;
+    while(cavalo <= 2)
+{
+    printf("BAIXO\n"); //imprimindo movimento para baixo
+    cavalo++;
+}
+    printf("ESQUERDA\n");
+}
 
     // Nível Mestre - Funções Recursivas e Loops Aninhados
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
