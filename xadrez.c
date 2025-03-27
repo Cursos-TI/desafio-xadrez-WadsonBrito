@@ -133,7 +133,7 @@ printf("\n");
     // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
     // Inclua o uso de continue e break dentro dos loops.
 
-printf("#### Movimentação do Cavalo ####\n");
+printf("\n#### Movimentação do Cavalo ####\n");
 
 for( int i = 0, j = 1; i < j; i++, j--){
     printf("Cima [%d],[%d]\n", i,j);
