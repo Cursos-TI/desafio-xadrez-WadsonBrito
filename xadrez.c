@@ -14,8 +14,13 @@ void movimentorainha (int rainha){
 }
 void movimentobispo (int bispo){
     if (bispo > 0){
-        printf("Direita Para Cima ");
         movimentobispo (bispo - 1);
+        printf("Direita\n");
+    }
+}
+void movimentocavalo (int cavalo){
+    if (cavalo > 0){
+        printf("Direita\n");
     }
 }
 // Desafio de Xadrez - MateCheck
@@ -104,21 +109,35 @@ for (int i = 1; i <= 1; i++) //movimentação horizontal
     // Nível Mestre - Funções Recursivas e Loops Aninhados
 
     // Sugestão: Substitua as movimentações das peças por funções recursivas.
-    
+
+    // Movimento Bispo usando Recursividade e loops aninhados
+    printf("#### MOVIMENTO BISPO ####\n");
+
+    movimentobispo(5);
+printf("\n");
+     for( int i = 1; i <= 5; i++){
+        for( int j = 1; j <= 5; j++){
+            printf("Cima [%d],[%d]\n", i,j);
+        }
+        printf("\n");
+    }
+        
     // Movimento Torre usando Recursividade
     printf("#### Movimento Torre ####\n");
     movimentotorre(5);
     
     // Movimento Rainha usando Recursividade
-    printf("#### Movimento Rainha ####\n");
+    printf("\n#### Movimento Rainha ####\n");
     movimentorainha(8);
-
-    // Movimento Bispo usando loops aninhados e Recursividade
-    for( int )
-
-
+    
     // Sugestão: Implemente a movimentação do Cavalo utilizando loops com variáveis múltiplas e condições avançadas.
     // Inclua o uso de continue e break dentro dos loops.
 
+printf("#### Movimentação do Cavalo ####\n");
+
+for( int i = 1, j = 2; i < j; i++, j--){
+    printf("Cima [%d],[%d]\n", i,j);
+}
+movimentocavalo(1);
     return 0;
 }
