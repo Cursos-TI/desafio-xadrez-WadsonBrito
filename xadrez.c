@@ -135,7 +135,7 @@ printf("\n");
 
 printf("#### Movimentação do Cavalo ####\n");
 
-for( int i = 1, j = 2; i < j; i++, j--){
+for( int i = 0, j = 1; i < j; i++, j--){
     printf("Cima [%d],[%d]\n", i,j);
 }
 movimentocavalo(1);
